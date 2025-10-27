@@ -13,7 +13,7 @@ export function Footer() {
               Sidhant
             </a>
             <p className="text-foreground/60 mt-1 text-sm">
-              Front-end Developer & Designer
+              Software Developer & Problem Solver
             </p>
           </div>
 

@@ -106,34 +106,33 @@ export function ContactSection() {
   };
 
   const handleSubmit = (e: React.FormEvent) => {
-  e.preventDefault();
-  setIsSubmitting(true);
+    e.preventDefault();
+    setIsSubmitting(true);
 
-  emailjs
-    .send(
-      import.meta.env.VITE_EMAILJS_SERVICE_ID,
-      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-      {
-        from_name: formData.name,
-        reply_to: formData.email,
-        message: formData.message,
-      },
-      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-    )
-    .then(
-      (result) => {
-        console.log("Email sent", result.text);
-        setFormData({ name: "", email: "", message: "" });
-        alert("Thank you for your message! I'll get back to you soon.");
-      },
-      (error) => {
-        console.error("Email failed to send:", error);
-        alert("Failed to send message. Please try again.");
-      }
-    )
-    .finally(() => setIsSubmitting(false));
-};
-
+    emailjs
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: formData.name,
+          reply_to: formData.email,
+          message: formData.message,
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log("Email sent", result.text);
+          setFormData({ name: "", email: "", message: "" });
+          alert("Thank you for your message! I'll get back to you soon.");
+        },
+        (error) => {
+          console.error("Email failed to send:", error);
+          alert("Failed to send message. Please try again.");
+        }
+      )
+      .finally(() => setIsSubmitting(false));
+  };
 
   return (
     <section id="contact" className="py-20 relative overflow-hidden">
@@ -227,7 +226,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <p className="text-sm text-foreground/70">Location</p>
-                    <p className="font-medium">Gurugram, India</p>
+                    <p className="font-medium">Chennai, India</p>
                   </div>
                 </CardContent>
               </Card>

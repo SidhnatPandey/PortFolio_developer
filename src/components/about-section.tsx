@@ -15,29 +15,27 @@ export function AboutSection() {
             </h2>
             
             <p className="text-lg text-foreground/80">
-              I'm a passionate front-end developer and designer with a focus on creating 
-              intuitive and visually appealing user interfaces. With expertise in modern web 
-              technologies, I build responsive applications that deliver exceptional user experiences.
-            </p>
-            
-            <p className="text-lg text-foreground/80">
-              My approach combines technical excellence with creative problem-solving. 
-              I believe in clean code, user-centered design, and continuous learning to stay 
-              at the forefront of web development trends.
-            </p>
+  I’m a passionate Software Developer committed to building efficient, reliable, and scalable solutions that make a real impact. With a strong foundation in computer science and hands-on experience across modern technologies, I develop applications that blend performance with clean architecture.
+</p>
+
+<p className="text-lg text-foreground/80">
+  My approach emphasizes writing maintainable code, optimizing system performance, and continuously improving through learning and innovation. I enjoy tackling complex challenges, collaborating with teams, and turning ideas into well-engineered software products that drive meaningful outcomes.
+</p>
+
             
             <div className="grid grid-cols-2 gap-4 pt-4">
               <Card className="bg-card/50 backdrop-blur-sm border-border/50">
                 <CardContent className="p-6">
                   <h3 className="font-medium text-lg mb-2">Education</h3>
-                  <p className="text-foreground/70">B.Tech in Computer Science</p>
+                  <p className="text-foreground/70">Computer Science Graduate (BTech CSE 2024
+                  )</p>
                 </CardContent>
               </Card>
               
               <Card className="bg-card/50 backdrop-blur-sm border-border/50">
                 <CardContent className="p-6">
                   <h3 className="font-medium text-lg mb-2">Experience</h3>
-                  <p className="text-foreground/70">2+ years in Web Development</p>
+                  <p className="text-foreground/70">2+ years in Software Development</p>
                 </CardContent>
               </Card>
             </div>

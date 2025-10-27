@@ -16,7 +16,7 @@ export function HeroSection() {
             Hi, I'm <span className="text-shimmer">Sidhant</span>
           </h1>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-foreground/80 mb-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            Front-end Developer & Designer
+            Software Developer & Problem Solver
           </h2>
           <p className="text-lg text-foreground/70 max-w-xl mb-8 animate-fade-in" style={{ animationDelay: "0.4s" }}>
             Creating beautiful digital experiences with modern technologies and thoughtful design principles. Let's build something amazing together.
